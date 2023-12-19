@@ -1,0 +1,41 @@
+.DeleteAccountModal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.DeleteAccountModal-footer button {
+    max-width: 100px;
+}
+
+.ant-table {
+    border-collapse: separate !important;
+}
+
+.DeleteAccountModal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.DeleteAccountModal-footer button {
+    max-width: 100px;
+}
+
+.delete-button {
+    color: #fff;
+    width: 45%;
+    margin-right: 5px;
+}
+
+.edit-button {
+    background-color: #48bb6a;
+}
+
+.delete-button {
+    background-color: #f7685b;
+}
+
+.delete-button {
+    background-color: #f7685b;
+}

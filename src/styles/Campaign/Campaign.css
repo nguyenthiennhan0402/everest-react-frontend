@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard_body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  width: 100%;
+  padding: 2em;
+  background-color: white;
+}
+
+.campaign-header__function {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.campaign-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.ant-table-thead tr {
+  background-color: #468faf;
+  color: #ffff !important;
+  font-weight: bold;
+}
+
+.ant-modal {
+  margin-top: -74px;
+}
+
+.date-picker {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.campaign-function-button {
+  display: flex;
+  gap: 15px;
+}
+
+.ant-table-tbody td {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.ant-table-cell {
+  overflow: hidden;
+  white-space: nowrap !important;
+  text-overflow: ellipsis;
+}
+
+.ant-table-cell div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.campaign-img {
+  max-width: 50px;
+  max-height: 50px;
+}

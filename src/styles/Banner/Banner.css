@@ -1,0 +1,11 @@
+.dashboard_banner {
+  width: 100vw;
+  height: 10vh;
+}
+
+.banner img {
+  margin: 0 auto;
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}

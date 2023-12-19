@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  background-color: aliceblue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.google {
+  background-color: #ea4336;
+}
+
+.facebook {
+  background-color: #4795ff;
+}

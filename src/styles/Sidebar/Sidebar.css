@@ -1,0 +1,162 @@
+.dashboard_left {
+  background-color: #468faf;
+  width: 15%;
+  height: 100%;
+}
+
+.left-item {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  border-bottom: 2px solid #dbdbdb;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.left-item__user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #dbdbdb;
+}
+
+.left-item__user-info .info-name {
+  margin: 10px;
+}
+
+.left-item.active {
+  background-color: #ffffe0;
+}
+
+.left-item.active .info-name,
+.left-item.active i {
+  color: #006400;
+}
+
+.info-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #574f4f;
+  background-size: cover;
+  background-position: center;
+}
+
+.info-name {
+  font-size: 16px;
+  color: #ffff;
+  text-align: center;
+  margin-left: 1em;
+}
+
+i {
+  color: #fff;
+}
+
+.dashboard_left {
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.left-item {
+  white-space: nowrap;
+}
+
+.info-name {
+  transition: color 0.3s ease;
+}
+
+.slide-out {
+  width: 60px;
+}
+
+.dashboard_left .info-name {
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.dashboard_left.slide-out .info-name {
+  display: none;
+}
+
+.dashboard_left.slide-out .info-img {
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.dashboard_left.slide-out .toggle-button__name {
+  display: none;
+}
+
+.dashboard_left.slide-out .toggle-button>i {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.dashboard_left .left-item {
+  flex-direction: row;
+  align-items: center;
+}
+
+.dashboard_left .left-item i {
+  margin-left: 1em;
+}
+
+.toggle-button {
+  text-align: left;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  background-color: #468FAF;
+  border: none;
+  margin: 10px auto;
+}
+
+.toggle-button__name {
+  margin: 0;
+}
+
+.toggle-button i {
+  margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+  .dashboard_left {
+    width: 60px;
+  }
+
+  .dashboard_left .info-name {
+    display: none;
+  }
+
+  .dashboard_left .info-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .dashboard_left .toggle-button__name {
+    display: none;
+  }
+
+  .dashboard_left .toggle-button i {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .dashboard_left.slide-out {
+    width: 60px;
+  }
+}

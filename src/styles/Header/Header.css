@@ -1,0 +1,23 @@
+.header-container {
+  background-color: #468faf;
+  width: 100vw;
+  height: 100px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-button {
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+}
