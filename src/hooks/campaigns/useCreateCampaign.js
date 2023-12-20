@@ -2,7 +2,7 @@ import axiosClient from "api/axiosClient";
 import { useMutation, useQueryClient } from "react-query";
 
 const createCampaign = async (formData, token) => {
-  const response = await axiosClient.post("/api/v1/campaigns/create-campaign", formData, {
+  const response = await axiosClient.post("/api/v1/campaigns/create-Campaign", formData, {
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "multipart/form-data",

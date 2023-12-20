@@ -13,15 +13,14 @@ const contentStyle = {
 const Banner = () => {
   const { data, isError, isLoading, refetch } = useFetchBanners();
   const { mutate } = useMinusBudget();
-  console.log(data);
 
   const carouselSettings = {
     autoplay: true,
     dots: false,
     beforeChange: (oldIndex, newIndex) => {
       if (newIndex >= 0 && newIndex < data?.data.length) {
-        const campaginId = data.data[newIndex].campaginId;
-        mutate({ id: campaginId });
+        const campaignId = data.data[newIndex].campaignId;
+        mutate({ id: campaignId });
       }
     },
     afterChange: (currentSlide) => {
@@ -38,12 +37,18 @@ const Banner = () => {
   if (isError) {
     return <p>Error fetching data</p>;
   }
+  if (data?.data.length === 0) {
+    refetch();
+    if (data?.data.length === 0) {
+      return <p>No banner to display</p>;
+    }
+  }
 
   return (
     <div className="dashboard_banner">
       <Carousel {...carouselSettings}>
         {data?.data.map((item) => (
-          <div key={item.campaginId} className="banner" style={{ ...contentStyle }}>
+          <div key={item.campaignId} className="banner" style={{ ...contentStyle }}>
             <img src={`${item.urlImg}`} alt="banner" />
           </div>
         ))}
